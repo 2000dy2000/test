@@ -166,25 +166,6 @@ async function sendHttpsRequest(cookiesString) {
         });
     });
 }
-// 第三步,将数据改为json格式保存到output.json文件中
-// function saveDataToFile(data) {
-//     try {
-//         // 将数据放入一个数组中，并保持为 JavaScript 对象
-//         const jsonArray = [{ datas: JSON.parse(data) }];
-//
-//         // 将数组转换为 JSON 格式的字符串，这里第三个参数为 2，表示使用 2 个空格进行缩进
-//         const jsonData = JSON.stringify(jsonArray, null, 2);
-//
-//         // 写入到 output.json 文件，添加 { flag: 'w' } 参数，指定写入模式为覆盖写入
-//         const outputPath = path.join(__dirname, 'output.json');
-//         fs.writeFileSync(outputPath, jsonData, { encoding: 'utf8', flag: 'w' });
-//
-//         console.log('Data saved to output.json successfully.');
-//
-//     } catch (error) {
-//         console.error('Error:', error);
-//     }
-// }
 // 运行爬虫并发送 HTTPS 请求
 (async () => {
     await getAndUseCookies();
