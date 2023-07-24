@@ -143,7 +143,7 @@ async function getAndUseCookies() {
 // 第二步,通过cookies发送HTTPS请求获取数据
 async function sendHttpsRequest(cookiesString) {
     const https = require('https');
-    const xnxqdm = '20222'; // 替换为您的 XNXQDM 参数的实际值
+    const xnxqdm = '20222'; // 替换为您的 XNXQDM 参数的实际值,就是需要查询的学期
     const url = `https://yjsyxt.gzhu.edu.cn/gsapp/sys/wdkbapp/modules/xskcb/xsjxrwcx.do?XNXQDM=${xnxqdm}`;
     const headers = {
         'Custom-Header': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36', // 替换为您自定义的 header 和对应的值
