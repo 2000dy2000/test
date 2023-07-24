@@ -1,0 +1,9 @@
+{
+  "name": "SpiderGraduate",
+  "version": "1.0.0",
+  "dependencies": {
+    "puppeteer": "^20.9.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
